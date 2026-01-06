@@ -1,0 +1,43 @@
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: 2fr auto 2fr;
+    padding: 20px 0;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+
+    justify-self: flex-start;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #ffffff;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    justify-self: flex-end;
+}
+
+.navbar-actions .icon {
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_icons {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+}

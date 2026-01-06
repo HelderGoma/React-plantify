@@ -1,0 +1,19 @@
+
+.section-plant {
+    padding: 90px 0;
+    background-color: #F3FFFC;
+}
+.section-body-plant {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+
