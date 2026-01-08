@@ -27,14 +27,14 @@ const Header = () => {
                             <div className="item">
                                 <span>Featured</span>
                                 <img src={header2} alt="" />
-                                <div className="item-overlay">
+                                {/* <div className="item-overlay">
                                     <h2>Anthurium Flower</h2>
                                     <p>
                                         The flower of human being. It has meaningful of fact that
                                         the plant always grow whatever season and weather...
                                     </p>
                                     <button className="btn btn-primary">READ MORE</button>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="item">
                                 <span>Popular</span>

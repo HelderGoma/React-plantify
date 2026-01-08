@@ -80,9 +80,9 @@
     padding: 20px 40px;
 }
 
-.header .content {
+.content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(482px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -129,7 +129,7 @@
     object-fit: cover;
 }
 
-.item-overlay {
+/* .item-overlay {
     position: absolute;
     bottom: 0;
     background-color: #008CBA;
@@ -161,4 +161,4 @@
 .item-overlay p {
     font-size: 14px;
     color: #fff;
-}
+} */
