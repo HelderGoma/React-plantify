@@ -56,6 +56,7 @@
     
     color: #fff;
     cursor: pointer;
+    
 }
 
 .btn-border-primary {
@@ -82,7 +83,7 @@
 
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: space-between;
     align-items: center;
     gap: 20px;
