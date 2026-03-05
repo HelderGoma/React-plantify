@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .contact__list {
@@ -42,5 +42,44 @@
     
 }
 
+@media (max-width: 992px) {
+    .text {
+        left: 28%;
+    }
+
+    .text ul {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact__image {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .text {
+        position: static;
+        transform: none;
+        color: var(--primary-color);
+    }
+
+    .text h2,
+    .text ul a,
+    .text ul {
+        color: var(--primary-color);
+    }
+
+    .text ul {
+        margin-top: 20px;
+    }
+}
 
 

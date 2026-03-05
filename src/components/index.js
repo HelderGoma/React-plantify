@@ -5,3 +5,8 @@ export { default as Colorful } from "./Colorful/Colorful.jsx";
 export { default as Plant } from "./Plant/Plant.jsx";
 export { default as Contact } from "./Contact/Contact.jsx";
 export { default as Footer} from "./Footer/Footer.jsx";
+export { default as CartDrawer } from "./CartDrawer/CartDrawer.jsx";
+export { default as ComparePanel } from "./ComparePanel/ComparePanel.jsx";
+export { default as Quiz } from "./Quiz/Quiz.jsx";
+export { default as QuickView } from "./QuickView/QuickView.jsx";
+export { default as ToastStack } from "./ToastStack/ToastStack.jsx";

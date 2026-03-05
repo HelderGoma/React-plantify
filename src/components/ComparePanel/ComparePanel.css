@@ -1,0 +1,37 @@
+.compare-section {
+  background-color: #f3fffc;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.compare-item {
+  border: 1px solid #d6e2df;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+}
+
+.compare-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.compare-item h3,
+.compare-item li {
+  color: var(--primary-color);
+}
+
+.compare-item ul {
+  list-style: none;
+  display: grid;
+  gap: 4px;
+}

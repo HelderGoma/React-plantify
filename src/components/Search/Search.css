@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    align-items: flex-start;
+}
+
+.search-field {
+    width: 100%;
+    position: relative;
 }
 
 .search__input {
@@ -13,4 +19,77 @@
 
 .search__input::placeholder {
     color: var(--primary-color);
+}
+
+.search-suggestions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    background-color: #fff;
+    border: 1px solid #d6e2df;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.suggestion-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px 12px;
+    border: 0;
+    background: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f3fffc;
+}
+
+.filter-panel {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #d6e2df;
+    border-radius: 12px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+}
+
+.filter-panel label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.filter-panel select,
+.filter-panel input[type="range"] {
+    accent-color: var(--primary-color);
+}
+
+.checkbox-filter {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .search {
+        gap: 10px;
+    }
+
+    .search .btn-icon {
+        padding: 12px;
+    }
+
+    .search__input {
+        padding: 12px;
+    }
+
+    .filter-panel {
+        grid-template-columns: 1fr;
+    }
 }

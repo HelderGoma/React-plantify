@@ -2,12 +2,12 @@ import './Header.css'
 import { header1, header2, header3 } from '../../assets/images'
 import Nav from '../Nav/Nav'
 
-const Header = () => {
+const Header = ({ cartCount, onOpenCart, onSearchFocus }) => {
     return (
         <>
             <header className="header">
                 <div className="container">
-                    <Nav />
+                    <Nav cartCount={cartCount} onOpenCart={onOpenCart} />
                     <section className="content">
                         <div className="header-info">
                             <h1 className="title">Happiness blooms from within</h1>
@@ -15,8 +15,8 @@ const Header = () => {
                                 attitudes and expectations.</p>
 
                             <div className="actions">
-                                <button className="btn btn-primary btn-large">Shop now</button>
-                                <button className="btn btn-link btn-large"><a href="">Explore plants</a></button>
+                                <button className="btn btn-primary btn-large" onClick={onSearchFocus}>Shop now</button>
+                                <a className="btn btn-link btn-large" href="#search-section" onClick={onSearchFocus}>Explore plants</a>
                             </div>
                         </div>
                         <div className="header-gallary">

@@ -3,7 +3,7 @@ import './Nav.css'
 import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-const Nav = () => {
+const Nav = ({ cartCount, onOpenCart }) => {
     return (
 
         <nav className="navbar">
@@ -17,9 +17,16 @@ const Nav = () => {
                 <img src={logo} alt="Plantify logo" />
             </a>
             <div className="navbar-actions">
-                <a href="#" className='nav_icons'><FaSearch /></a>
-                <a href="#" className='nav_icons'><FaUser /></a>
-                <a href="#" className='nav_icons'><FaShoppingCart /></a>
+                <button type="button" className='nav_icons' aria-label="Search section">
+                    <FaSearch />
+                </button>
+                <button type="button" className='nav_icons' aria-label="User account">
+                    <FaUser />
+                </button>
+                <button type="button" className='nav_icons cart-button' onClick={onOpenCart} aria-label="Open cart">
+                    <FaShoppingCart />
+                    {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+                </button>
 
 
 

@@ -4,16 +4,35 @@
     background-color: #F3FFFC;
 }
 .section-body-plant {
-    display: flex;
-    gap: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
     align-items: center;
+}
+
+.section-body-plant > div {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.section-body-plant img {
+    transition: transform 0.25s ease;
+}
+
+.section-body-plant > div:hover img {
+    transform: scale(1.04);
 }
 .arrow {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+    justify-self: flex-start;
 }
 
+@media (max-width: 576px) {
+    .section-body-plant {
+        grid-template-columns: 1fr;
+    }
+}
 
 
